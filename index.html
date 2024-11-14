@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">    
+    <link rel="stylesheet" href="./css/style.css"> 
+    <script src="./app.js" defer></script>
+        <!--Plataforma de gestión de emails de contacto-->
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">emailjs.init('kmNplMeJ6z8x_4vgz')</script> 
     <title>Portafolio Diego Mateus</title>
 </head>
+
 <body>
 
     <header class="Header">
@@ -161,23 +166,9 @@
         <section class="Main_sect_Projects" id="Projects">
             <h2 class="Main_sect_Projects_H2">Experiencia Profesional</h2>
 
-            <article class="Main_sect_Projects_article_1">
-                <div class="Main_sect_Projects_article_1_left">
-                    <img src="./assets/Project_1.png" alt="Vista previa del proyecto Encriptador de texto" width="auto" height="700 px">
-                </div>
-                <div class="Main_sect_Projects_article_1_right">
-                    <h3 class="Main_sect_Projects_article_1_right_tittle">Encriptador de Texto</h3>
-                    <p class="Main_sect_Projects_article_1_right_p">Challenge Oracle</p>
-                    <div class="Main_sect_Projects_article_1_right_buttons">
-                        <button class="Main_sect_Projects_article_1_right_buttons_1"> <a href="https://github.com/RyoKymera/Challenge1-Encriptador-de-texto">Repositorio</a></button>
-                        <button class="Main_sect_Projects_article_1_right_buttons_2"> <a href="https://ryokymera.github.io/Challenge1-Encriptador-de-texto/">Ver Demo</a></button>
-                    </div>
-                </div>
-            </article>
-
             <article class="Main_sect_Projects_article_2">
                 <div class="Main_sect_Projects_article_2_left">
-                    <img src="./assets/Project_1.png" alt="Vista previa del proyecto Encriptador de texto" width="auto" height="700 px">
+                    <img src="./assets/Project_1.png" alt="Vista previa del proyecto Encriptador de texto" width="35 rem" height="auto">
                 </div>
                 <div class="Main_sect_Projects_article_2_right">
                     <h3 class="Main_sect_Projects_article_2_right_tittle">Encriptador de Texto</h3>
@@ -188,13 +179,76 @@
                     </div>
                 </div>
             </article>
+
+            <article class="Main_sect_Projects_article_1">
+                <div class="Main_sect_Projects_article_1_left">
+                    <img src="./assets/Project_2.png" alt="Vista previa del proyecto Aluraplay" width="35 rem" height="auto">
+                </div>
+                <div class="Main_sect_Projects_article_1_right">
+                    <h3 class="Main_sect_Projects_article_1_right_tittle">Aluraplay</h3>
+                    <p class="Main_sect_Projects_article_1_right_p">Actividad Oracle</p>
+                    <div class="Main_sect_Projects_article_1_right_buttons">
+                        <button class="Main_sect_Projects_article_1_right_buttons_1"> <a href="https://github.com/RyoKymera/AluraPlay.git">Repositorio</a></button>
+                        <button class="Main_sect_Projects_article_1_right_buttons_2"> <a href="https://ryokymera.github.io/AluraPlay/">Ver Demo</a></button>
+                    </div>
+                </div>
+            </article>
+
+            <article class="Main_sect_Projects_article_1">
+                <div class="Main_sect_Projects_article_1_left">
+                    <img src="./assets/Project_3.png" alt="Vista previa del proyecto Portafolio cliente" width="35 rem" height="auto">
+                </div>
+                <div class="Main_sect_Projects_article_1_right">
+                    <h3 class="Main_sect_Projects_article_1_right_tittle">Portafolio Cliente</h3>
+                    <p class="Main_sect_Projects_article_1_right_p">Actividad Oracle</p>
+                    <div class="Main_sect_Projects_article_1_right_buttons">
+                        <button class="Main_sect_Projects_article_1_right_buttons_1"> <a href="https://github.com/RyoKymera/Portafolio-de-Cliente.git">Repositorio</a></button>
+                        <button class="Main_sect_Projects_article_1_right_buttons_2"> <a href="https://ryokymera.github.io/Portafolio-de-Cliente/">Ver Demo</a></button>
+                    </div>
+                </div>
+            </article>
             
         </section>
 
-        <section class="Main_sect_email" id="email"></section>
+        <section class="Main_sect_email" id="email">
+
+            <div class="Main_sect_email_image">
+                <img src="./assets/contact_image.png" alt="Fotografía de la bocina de un teléfono">
+            </div>
+
+            <div class="Main_sect_email_Form">
+                <h2 class="Main_sect_email_Form_h2">Contacto</h2>
+                <p class="Main_sect_email_Form_p">¿Quieres contactarme?</p>
+                <p class="Main_sect_email_Form_p">Completa el siguiente formulario y me pondré en contacto contigo lo antes posible</p>
+
+                <form id="form">
+                    <div class="field">
+                      <label for="from_name">Nombre</label>
+                      <input type="text" name="from_name" id="from_name">
+                    </div>
+                    <div class="field">
+                      <label for="email_id">E-mail</label>
+                      <input type="text" name="email_id" id="email_id">
+                    </div>
+                    <div class="field">
+                      <label for="subject">Asunto</label>
+                      <input type="text" name="subject" id="subject">
+                    </div>
+                    <div class="field">
+                      <label for="message">Mensaje</label>
+                      <input type="text" name="message" id="message">
+                    </div>
+                  
+                    <input type="submit" id="button" value="Enviar Mensaje" >
+                </form>
+            </div>
+        </section>
 
     </main>
     
-    <footer></footer>
+    <footer class="Footer">
+        <h2 class="Footer_h2">Desarrollado por Diego O. Mateus</h2>
+        <h3 class="Footer_h3">2024</h3>
+    </footer>
 </body>
 </html>

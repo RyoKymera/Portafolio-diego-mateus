@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.root{
+    --Font-principal:"Raleway", sans-serif;
+}
+
+.Header{
+    display: flex;
+    align-items: center;
+    padding-left: 0.7rem;
+    padding: 1rem;
+}
+
+.Header_Nav{
+    display: flex;
+    flex-direction: row;
+    font-family: var(--Font-main);
+    list-style-type: none;
+    margin-left: auto
+}
+
+/*Se ocultan los elementos Mobile first*/
+.Header_Nav li:nth-child(1){
+    display: none;
+}
+.Header_Nav li:nth-child(2){
+    display: none;
+}
+.Header_Nav li:nth-child(3){
+    display: none;
+}
+.Header_Nav li:nth-child(4){
+    display: none;
+}
+.Header_Nav li:nth-child(5){
+    display: none;
+}
+
+
+.Header_H2{
+    padding-left: 2rem;
+    font-family: var(--Font-principal);
+    font-weight: 800;
+    font-size: 16px;
+}
