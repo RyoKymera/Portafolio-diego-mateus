@@ -1,9 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-.root{
-    --Font-principal:"Raleway", sans-serif;
+:root {
+    --Font-principal: 'Raleway', serif;
+    --background-color-1: #f5f5f5;
+    --background-color-2: #EAF2FD;
+    --Form-Font-color-1: #A2A2A2;
+    --Form-border-color: #C8C8C8;
+    --Space-blanck-white: #FFFFFF;
+    --principal-blue: #2A7AE4;
+    --principal-font-color: #464646;
+    --Font-regular: 400;
+    --Font-semiBold: 600;
+    --Font-Bold: 700;
 }
 
+.body{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color-1);
+}
+
+
+/*Header*/
 .Header{
     display: flex;
     align-items: center;
@@ -12,11 +32,13 @@
 }
 
 .Header_Nav{
+    font-family: var(--Font-principal);
+    font-size: 14px;
+    color: var(--principal-font-color);
     display: flex;
     flex-direction: row;
-    font-family: var(--Font-main);
     list-style-type: none;
-    margin-left: auto
+    margin-left: auto;
 }
 
 /*Se ocultan los elementos Mobile first*/
@@ -36,10 +58,89 @@
     display: none;
 }
 
-
+/*Header Autor*/
 .Header_H2{
-    padding-left: 2rem;
+    padding-left: 1rem;
     font-family: var(--Font-principal);
-    font-weight: 800;
+    font-weight: var(--Font-Bold);
     font-size: 16px;
+    color: var(--color-1);
+}
+
+
+/*Sección Perfil*/
+.Main_sect_Profile{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column-reverse;
+    padding: 1rem 1rem 1rem 1rem;
+    width: 100%;
+}
+
+.Main_sect_Profile_texto{
+    padding-top: 1rem;
+}
+
+.Main_sect_Profile_Imagen{
+    width: 6rem;
+    height: auto;
+}
+
+.Main_sect_Profile_texto_H1{
+    font-family: var(--Font-principal);
+    font-size: 22px;
+    font-weight: var(--Font-Bold);
+    padding-bottom: 1rem;
+    color: var(--principal-font-color);
+}
+
+.Main_sect_Profile_texto_p{
+    font-family: var(--Font-principal);
+    font-size: var(--Font-regular);
+    color: var(--principal-font-color);
+    padding-bottom: 1rem;
+}
+
+.Main_sect_Profile_texto_networks{
+    font-family: var(--Font-principal);
+    font-size: 14px;
+    font-weight: var(--Font-semiBold);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Main_sect_Profile_texto_networks_li{
+    display: flex;
+    gap: 1rem;
+    margin: auto;
+}
+
+/*Sección Sobre mi*/
+.Main_sect_Sobremi{
+    background-color: var(--background-color-2);
+    padding: 1rem;
+    font-family: var(--Font-principal);
+    color: var(--principal-font-color);
+}
+
+.Main_sect_Sobremi_H2{
+    font-size: 22px;
+    font-weight: var(--Font-Bold);
+    padding-bottom: 1rem;
+}
+
+.Main_sect_Sobremi_paragraph{
+    font-size: 14px;
+    font-weight: var(--Font-regular);
+    padding-bottom: 1rem;
+}
+
+
+.Main_sect_Formacion{
+    background-color: var(--background-color-2);
+}
+
+.Main_sect_contact{
+    background-color: var(--background-color-2);
 }
