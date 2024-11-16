@@ -101,6 +101,7 @@
     padding-bottom: 1rem;
 }
 
+    /*Redes de contacto*/
 .Main_sect_Profile_texto_networks{
     font-family: var(--Font-principal);
     font-size: 14px;
@@ -137,8 +138,110 @@
 }
 
 
+/*Sección Skills*/
+
+.Main_sect_Skills_H2{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: var(--Font-principal);
+    font-weight: var(--Font-Bold);
+    font-size: 22px;
+    color: var(--principal-font-color);
+}
+
+    /*Div contenedor*/
+.Main_sect_Skills_Images{
+    display: flex;
+    padding: 0rem 0.5rem;
+    margin-bottom: 0;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    height: 28.125rem;
+    justify-content: space-between;
+}
+
+    /*Contenedor Imagenes individual*/
+.Main_sect_Skills_Images_Figure{
+    width: 9.75rem;
+    height: 7.375rem;
+    padding:1rem;
+    margin: 1rem 0.5rem;
+    text-align: center;
+    font-family: var(--Font-principal);
+    font-size: 16px;
+    font-weight: var(--Font-Bold);
+    background-color: var(--Space-blanck-white);
+    box-sizing: border-box;
+}
+
+    /*Proíedades de imagen*/
+.Main_sect_Skills_Images_Figure img{
+    height: 60%;
+    width: auto;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/*Sección Hobbies*/
+.Main_sect_Hoobies_H2{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: var(--Font-principal);
+    font-weight: var(--Font-Bold);
+    font-size: 22px;
+    color: var(--principal-font-color);
+}
+
+    /*Div contenedor*/
+.Main_sect_Hobbies_Images{
+    display: flex;
+    padding: 0rem 0.5rem;
+    margin-bottom: 0;
+    flex-flow: row wrap;
+    flex-grow: 1;
+    height: 28.125rem;
+    justify-content: space-between;
+}
+
+    /*Contenedor Imagenes individual*/
+.Main_sect_Hobbies_Images_Figure{
+    width: 9.75rem;
+    height: 7.375rem;
+    padding:1rem;
+    margin: 1rem 0.5rem;
+    text-align: center;
+    font-family: var(--Font-principal);
+    font-size: 16px;
+    font-weight: var(--Font-Bold);
+    background-color: var(--Space-blanck-white);
+    box-sizing: border-box;
+}
+
+    /*Proíedades de imagen*/
+.Main_sect_Hobbies_Images_Figure img{
+    height: 60%;
+    width: auto;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/*Sección Formación*/
 .Main_sect_Formacion{
     background-color: var(--background-color-2);
+}
+
+.Main_sect_Formacion_H2{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-family: var(--Font-principal);
+    font-weight: var(--Font-Bold);
+    font-size: 22px;
+    color: var(--principal-font-color);
 }
 
 .Main_sect_contact{
