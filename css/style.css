@@ -11,6 +11,7 @@
     --principal-font-color: #464646;
     --Font-regular: 400;
     --Font-semiBold: 600;
+    --Font-Medium: 500;
     --Font-Bold: 700;
 }
 
@@ -244,6 +245,305 @@
     color: var(--principal-font-color);
 }
 
+        /*Div contenedor General*/
+.Main_sect_Formacion_Images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 33.6875rem;
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+    /*Div contenedor Individual*/
+.Main_sect_Formacion_Images_Box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 18.5rem;
+    height: 10.5625rem;
+    text-align: left;
+    font-family: var(--Font-principal);
+    color: var(--principal-font-color);
+}
+
+    /*Div contenedor Imagen individual y textos*/
+.Main_sect_Formacion_Images_Box_Img{
+    background-color: var(--Space-blanck-white);
+    height: 7.375rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Main_sect_Formacion_Images_Box_Img img{
+    height: 4rem;
+    width: auto;
+}
+
+.Main_sect_Formacion_Images_Title_H3{
+    font-size: 16px;
+    font-weight: var(--Font-Bold);
+}
+
+.Main_sect_Formacion_Images_Text_P{
+    font-size: 14px;
+    font-weight: var(--Font-Medium);
+}
+
+/*Sección Experiencia profesional (Projects)*/
+.Main_sect_Projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--Font-principal);
+    color: var(--principal-font-color);
+}
+
+.Main_sect_Projects_H2{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    font-weight: var(--Font-Bold);
+    font-size: 22px;
+}
+
+    /*Contenedor Imagen y botones*/
+
+.Main_sect_Projects_Div_principal{
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+    padding: 0 2rem 2rem 2rem;
+    justify-content: space-between;
+}
+
+.Main_sect_Projects_article{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.Main_sect_Projects_article_left img{
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.Main_sect_Projects_article_right{
+    height: 5.6875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Main_sect_Projects_article_right_tittle{
+    font-size: 14px;
+    font-weight: var(--Font-Bold);
+}
+
+.Main_sect_Projects_article_right_p{
+    font-size: 14px;
+    font-weight: var(--Font-Medium);
+}
+
+    /*Botones*/
+.Main_sect_Projects_article_right_buttons{
+    font-size: 14px;
+    font-weight: var(--Font-semiBold);
+
+}
+
+.Main_sect_Projects_article_right_buttons_1{
+    width: 6.75rem;
+    height: 2.5rem;
+    margin-right: 0.5rem;
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+    border-color: var(--principal-blue);
+    color: var(--principal-blue);
+}
+    /*Boton al pasar sobre él*/
+.Main_sect_Projects_article_right_buttons_1:hover{
+    background-color: #e2e2e2ea;
+}
+
+.Main_sect_Projects_article_right_buttons_2{
+    width: 6.75rem;
+    height: 2.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    background-color: var(--principal-blue);
+    color: var(--Space-blanck-white);
+    border: 1px solid var(--principal-blue);
+}
+
+    /*Boton al pasar sobre él*/
+.Main_sect_Projects_article_right_buttons_2:hover{
+        background-color: #589ef5;
+}
+
+/*Sección Contacto (Formulario)*/
 .Main_sect_contact{
     background-color: var(--background-color-2);
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    font-family: var(--Font-principal);
+}
+
+.Main_sect_contact_image{
+    display: none;
+}
+
+.Main_sect_contact_Form_Text_h2{
+    font-size: 22px;
+    font-weight: var(--Font-Bold);
+    color: var(--principal-font-color);
+    padding-bottom: 0.5rem;
+}
+
+.Main_sect_contact_Form_Text_p{
+    font-size: 16px;
+    font-weight: var(--Font-Medium);
+    color: var(--principal-font-color);
+}
+
+.Main_sect_contact_Form_Form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;  
+    padding-top: 2rem;
+    position: relative;
+}
+
+.Main_sect_contact_Form_Text{
+    height: 6.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    /*Personalización de los campos del formulario*/
+.form-input{
+    display: flex;
+    width: 95%;
+    height: 1.9rem;
+    padding: 0.8rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 16px;
+    color: var(--Form-Font-color-1);
+    outline: none;
+    position: relative;
+    box-shadow: 0 1px 0 var(--Form-border-color);
+}
+    
+.form-textarea{
+    width: 95%;
+    height: 6.8125rem;
+    padding: 1.5rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 16px;
+    color: var(--Form-Font-color-1);
+    line-height: 1.5;
+    resize: none;
+    box-shadow: 0 1px 0 var(--Form-border-color); /*Desplazamiento Horizontal /Desplazamiento Vertical / Desenfoque*/
+}
+
+.form-label-name{
+    position: absolute; /*Campos flotantes con este atributo*/
+    left: 0.75rem;
+    top: 2.5rem;
+    font-size: 12px;
+    font-weight: var(--Font-regular);
+    color: var(--principal-blue);
+    display: none;
+    text-align:;
+}
+
+.form-label-email{
+    position: absolute;
+    left: 0.75rem;
+    top: 8rem;
+    font-size: 12px;
+    font-weight: var(--Font-regular);
+    color: var(--principal-blue);
+    display: none;
+}
+
+.form-label-subject{
+    position: absolute;
+    left: 0.75rem;
+    top: 13.5rem;
+    font-size: 12px;
+    font-weight: var(--Font-regular);
+    color: var(--principal-blue);
+    display: none;
+}
+
+.form-label-message{
+    position: absolute;
+    left: 0.75rem;
+    top: 19rem;
+    font-size: 12px;
+    font-weight: var(--Font-regular);
+    color: var(--principal-blue);
+    display: none;
+}
+
+    /* Mostrar el label cuando el input o textarea está enfocado o tiene contenido */
+.form-input:focus + .form-label-name,
+.form-input:not(:placeholder-shown) + .form-label-name {
+    display: block;
+}
+
+.form-input:focus + .form-label-email,
+.form-input:not(:placeholder-shown) + .form-label-email {
+    display: block;
+}
+
+.form-input:focus + .form-label-subject,
+.form-input:not(:placeholder-shown) + .form-label-subject {
+    display: block;
+}
+
+.form-textarea:focus + .form-label-message,
+.form-textarea:not(:placeholder-shown) + .form-label-message {
+    display: block;
+}
+
+    /*Cambiar de ubicación el texto del  usuario*/
+.form-input:focus::placeholder{
+    transform: translateY(0.2rem);
+}
+
+.form-input:focus{
+    padding: 1.6rem 0.75rem 0 0.75rem;
+}
+
+    /*Boton Enviar*/
+.form-button{
+    width: 8.3125rem;
+    height: 2.5rem;
+    cursor: pointer;
+    background-color: var(--principal-blue);
+    color: var(--Space-blanck-white);
+}
+
+.form-button:hover{
+    background-color: #589ef5;
+}
+
+/*Footer*/
+.Footer{
+    font-family: var(--Font-principal);
+    height: 6.375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: var(--Font-Medium);
+    gap: 0.5rem;
 }

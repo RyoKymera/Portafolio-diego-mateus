@@ -18,3 +18,13 @@ document.getElementById('form')
       alert(JSON.stringify(err));
     });
 });
+
+
+// Selecciona el formulario por su ID
+const form = document.getElementById("form");
+
+// Escucha el evento de envío del formulario
+form.addEventListener("submit", function(event) {
+    event.preventDefault(); // Previene el envío por defecto
+    form.reset(); // Resetea los campos del formulario
+});
