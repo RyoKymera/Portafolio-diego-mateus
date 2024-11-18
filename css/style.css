@@ -61,7 +61,8 @@
 
 /*Header Autor*/
 .Header_H2{
-    padding-left: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 1rem;
     font-family: var(--Font-principal);
     font-weight: var(--Font-Bold);
     font-size: 16px;
@@ -176,7 +177,7 @@
     box-sizing: border-box;
 }
 
-    /*Proíedades de imagen*/
+    /*Propiedades de imagen*/
 .Main_sect_Skills_Images_Figure img{
     height: 60%;
     width: auto;
@@ -186,7 +187,7 @@
 }
 
 /*Sección Hobbies*/
-.Main_sect_Hoobies_H2{
+.Main_sect_Hobbies_H2{
     text-align: center;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -221,7 +222,7 @@
     box-sizing: border-box;
 }
 
-    /*Proíedades de imagen*/
+    /*Propiedades de imagen*/
 .Main_sect_Hobbies_Images_Figure img{
     height: 60%;
     width: auto;
@@ -245,7 +246,7 @@
     color: var(--principal-font-color);
 }
 
-        /*Div contenedor General*/
+    /*Div contenedor General*/
 .Main_sect_Formacion_Images{
     display: flex;
     flex-direction: column;
@@ -303,7 +304,7 @@
 .Main_sect_Projects_H2{
     text-align: center;
     padding-top: 2rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
     font-weight: var(--Font-Bold);
     font-size: 22px;
 }
@@ -397,6 +398,13 @@
     display: none;
 }
 
+.Main_sect_contact_Form_Text{
+    height: 6.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .Main_sect_contact_Form_Text_h2{
     font-size: 22px;
     font-weight: var(--Font-Bold);
@@ -416,13 +424,6 @@
     gap: 2rem;  
     padding-top: 2rem;
     position: relative;
-}
-
-.Main_sect_contact_Form_Text{
-    height: 6.875rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
     /*Personalización de los campos del formulario*/
@@ -545,4 +546,355 @@
     font-size: 16px;
     font-weight: var(--Font-Medium);
     gap: 0.5rem;
+}
+
+/*Media queries*/
+
+@media(min-width:768px) {
+
+        /*Cambio Navegación tablet*/
+    .Header{
+        padding: 1rem 2rem;
+    }
+    
+    .Header_Nav{
+        font-size: 16px;
+    }
+
+    .Header_Nav li:nth-child(6){
+        font-weight: var(--Font-Bold);
+    }
+
+        /*Cambio Sección Perfil tablet*/
+    .Main_sect_Profile{
+        flex-direction: row;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .Main_sect_Profile_Imagen{
+        height: 9.125rem;
+        width: auto;
+        padding-left: 2rem;
+    }
+
+    .Main_sect_Profile_texto{
+        padding-right: 2rem;
+    }
+
+    .Main_sect_Profile_texto_H1{
+        padding-bottom: 0.5rem;
+    }
+
+    .Main_sect_Profile_texto_p{
+        font-size: 16px;
+        padding-bottom: 0.5rem;
+    }
+
+    .Main_sect_Profile_texto_networks_li{
+        font-size: 16px;
+    }
+
+        /*Cambio Sección sobre mí tablet*/
+    .Main_sect_Sobremi{
+        padding: 2rem 3rem 2rem 2rem;
+    }
+    
+       /*Cambio Sección Skills tablet*/ 
+    .Main_sect_Skills_Images{
+        padding: 0 2rem 2rem 2rem;
+        height: 19rem;
+    }
+
+    .Main_sect_Skills_Images_Figure{
+        width: 14rem;
+        margin: 1rem 0;
+    }
+
+        /*Cambio Sección Skills tablet*/ 
+    .Main_sect_Hobbies_Images{
+        padding: 0 2rem 2rem 2rem;
+        height: 19rem;
+    }
+    
+    .Main_sect_Hobbies_Images_Figure{
+        width: 14rem;
+        margin: 1rem 0;
+    }
+
+        /*Cambio Sección Formación tablet*/ 
+    .Main_sect_Formacion_Images{
+        height: 12.5625rem;
+        flex-direction: row;
+    }
+
+    .Main_sect_Formacion_Images_Box{
+        width: 14rem;
+    }
+
+        /*Cambio Sección Contacto tablet*/
+    .Main_sect_contact{
+        height: 37.8rem;
+    }
+    .Main_sect_contact_Form_Text{
+        height: 4.5rem;
+    }    
+    
+}
+
+@media(min-width:1025px) {
+    
+        /*Cambio Navegación PC*/
+    .Header{
+        font-size: 16px;
+        padding: 2rem 6rem;
+        text-align: center;
+    }
+
+    .Header_Nav{
+        gap: 2rem;
+    }
+
+        /*Se muestran los elementos ocultos del Nav*/
+    .Header_Nav li:nth-child(1){
+        display: block;
+    }
+    .Header_Nav li:nth-child(2){
+        display: block;
+    }
+    .Header_Nav li:nth-child(3){
+        display: block;
+    }
+    .Header_Nav li:nth-child(4){
+        display: block;
+    }
+    .Header_Nav li:nth-child(5){
+        display: block;
+    }
+
+        /*Cambio Navegación PC*/
+    .Main_sect_Profile{
+        padding: 2rem 6rem;
+        height: 27rem;
+        justify-content: space-between;
+    }
+
+
+    .Main_sect_Profile_Imagen{
+        height: 23rem;
+        width: auto;
+        padding-left: 0;
+    }
+    
+    .Main_sect_Profile_texto{
+        padding-right: 1rem;
+        width: 47rem;
+    }
+
+    .Main_sect_Profile_texto_H1{
+        padding-bottom: 1.5rem;
+        font-size: 42px;
+    }
+
+    .Main_sect_Profile_texto_p{
+        font-size: 22px;
+        padding-bottom: 1.5rem;
+    }
+        
+        /*Cambio Sección Sobre mí PC*/
+    .Main_sect_Sobremi{
+        padding: 4rem 6rem;
+    }
+
+    .Main_sect_Sobremi_H2{
+        font-size: 32px;
+    }
+
+    .Main_sect_Sobremi_paragraph{
+        font-size: 16px;
+    }
+
+        /*Cambio Sección Skills PC*/
+    .Main_sect_Skills_H2{
+        font-size: 32px;
+        padding: 2rem 6rem;
+    }
+
+    .Main_sect_Skills_Images{
+        padding: 0 6rem 5.5rem 6rem;
+        height: auto;
+    }
+        
+    .Main_sect_Skills_Images_Figure{
+        width: 11rem;
+        height: 10.875;
+        margin: 0;
+    }
+
+        /*Cambio Sección Hobbies PC*/
+    .Main_sect_Hobbies_H2{
+        font-size: 32px;
+        padding: 0 6rem 2rem 6rem;
+    }
+    
+    .Main_sect_Hobbies_Images{
+        padding: 0 6rem 5.5rem 6rem;
+        height: auto;
+    }
+            
+    .Main_sect_Hobbies_Images_Figure{
+        width: 11rem;
+        height: 10.875;
+        margin: 0;
+    }
+
+        /*Cambio Sección Formación PC*/
+    .Main_sect_Formacion_H2{
+        font-size: 32px;
+        padding: 5.125rem 6rem 2rem 6rem;
+    }
+
+    .Main_sect_Formacion_Images{
+        height: 21.6875rem;
+        padding: 0 6rem 5.125rem 6rem;
+        flex-direction: row;
+    }
+
+        /*Div contenedor Individual PC*/
+    .Main_sect_Formacion_Images_Box{
+        width: 22rem;
+        height: 19.6875rem;
+    }
+    
+        /*Div contenedor Imagen individual y textos PC*/
+    .Main_sect_Formacion_Images_Box_Img{
+        height: 17.875rem;
+    }
+
+    .Main_sect_Formacion_Images_Box_Img img{
+        height: 8.125rem;
+    }
+    
+    .Main_sect_Formacion_Images_Title_H3{
+        font-size: 22px;
+        padding-top: 0.5rem;
+    }
+    
+    .Main_sect_Formacion_Images_Text_P{
+        font-size: 16px;
+        padding-top: 0.5rem;
+    }
+
+        /*Sección Projects PC*/
+    .Main_sect_Projects{
+        padding: 2rem 6rem;
+    }
+
+    .Main_sect_Projects_H2{
+        padding: 0 6rem 2rem 6rem;
+        font-size: 32px;
+    }
+
+    .Main_sect_Projects_Div_principal{
+        padding: 0;
+    }
+
+    .Main_sect_Projects_article{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .Main_sect_Projects_article_left img{
+        width: 60rem;
+        padding: 0 1rem 0 0;
+        align-items: flex-start;
+    }
+
+    .Main_sect_Projects_article_right{
+        width: 16.275rem;
+    }
+
+    .Main_sect_Projects_article_right_tittle{
+        font-size: 22px;
+        padding-bottom: 0.5rem;
+        text-align: center;
+    }
+    
+    .Main_sect_Projects_article_right_p{
+        font-size: 16px;
+        padding-bottom: 0.7rem;
+        text-align: center;
+    }
+    
+        /*Botones*/
+    .Main_sect_Projects_article_right_buttons{
+        font-size: 16px;
+        font-weight: var(--Font-regular);
+    
+    }
+    
+    .Main_sect_Projects_article_right_buttons_1{
+        width: 7.25rem;
+        height: 3.1875rem;
+    }
+    
+    .Main_sect_Projects_article_right_buttons_2{
+        width: 7.25rem;
+        height: 3.1875rem;
+    }
+    
+        /*Contacto PC*/
+    .Main_sect_contact{
+        height: 49.25rem;
+        flex-direction: row;
+        padding: 4rem 6rem 0 6rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Main_sect_contact_image{
+        display: flex;
+        height: 39.25;
+        width: 30.375rem;
+        align-items: center;
+    }
+
+    .Main_sect_contact_Form_Form{
+        height: auto;
+        padding-left: 1rem;
+    }
+
+    .Main_sect_contact_Form_Text{
+        height: 5.25rem;
+        padding-left: 1.5rem;
+    }
+
+    .Main_sect_contact_Form_Text_h2{
+        font-size: 32px;
+    }
+
+        /*Ajuste de indicadores formulario PC*/
+    .form-label-name{
+        left: 1.75rem;
+    }
+
+    .form-label-email{
+        left: 1.75rem;
+    }
+
+    .form-label-message{
+        left: 1.75rem;
+    }
+
+    .form-label-subject{
+        left: 1.75rem;
+    }
+
+        /*Boton Enviar PC*/
+    .form-button{
+        width: 9rem;
+        height: 3.1875rem;
+        cursor: pointer;
+    }
+
 }
